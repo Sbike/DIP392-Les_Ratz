@@ -40,6 +40,7 @@ class Connect4:
                     messagebox.showinfo("Game Over", f"{self.current_player.capitalize()} player wins!")
                     self.game_over = True
                     self.score[self.current_player] += 1
+                    messagebox.showinfo("Game Over", self.score)
                 elif self.check_tie():
                     messagebox.showinfo("Game Over", "It's a tie!")
                     self.game_over = True
